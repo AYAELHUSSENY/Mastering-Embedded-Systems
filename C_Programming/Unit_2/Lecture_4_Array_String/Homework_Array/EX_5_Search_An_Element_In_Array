@@ -1,0 +1,22 @@
+#include"stdio.h"
+void main()
+{   int NumberOfElements,SearchedElement;
+int arr[100];
+    printf("Enter no of elements:");
+    scanf("%d",&NumberOfElements);
+    for(int i = 0 ; i < NumberOfElements;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter the elements to be searched:");
+    scanf("%d",&SearchedElement);
+    for(int i = 0 ; i < NumberOfElements; i++)
+    {
+        if(arr[i]==SearchedElement)
+        {
+            printf("Number found at the location = %d",i+1);
+        }
+
+
+    }
+}
