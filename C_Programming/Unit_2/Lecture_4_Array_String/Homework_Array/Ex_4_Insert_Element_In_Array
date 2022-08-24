@@ -1,0 +1,35 @@
+#include"stdio.h"
+void main()
+{   int NumberOfElements,element,index;
+    int arr[100];
+
+    printf("enter no of elements:");
+    scanf("%d",&NumberOfElements);
+
+    for(int i = 0; i < NumberOfElements;i++)
+    {
+        scanf("%d",&arr[i]);
+
+    }
+
+    printf("Enter the element to be inserted:");
+    scanf("%d",&element);
+    printf("Enter the location:");
+    scanf("%d",&index);
+    NumberOfElements++;
+
+	for(int i=NumberOfElements; i>=index ;i--)
+		{
+			arr[i]=arr[i-1];
+		}
+	arr[index-1]= element;
+    //printing the array after insertion
+    for(int i = 0; i <= 5;i++)
+    {
+        printf("%d",arr[i]);
+
+    }
+
+
+
+}
