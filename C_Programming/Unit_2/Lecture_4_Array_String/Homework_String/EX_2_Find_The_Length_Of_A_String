@@ -1,0 +1,15 @@
+#include"stdio.h"
+void main()
+{
+    char text[100];
+    int i = 0,counter = 0;
+    printf("Enter a string:");
+    gets(text);
+    while(text[i] != 0)
+    {
+        counter++;
+        i++;
+    }
+
+    printf("Length of string: %d",counter);
+}
